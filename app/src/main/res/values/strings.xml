@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">yourmovieindexapp</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="on_Failure">onFailure:</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="popular_movie">List of Popular Movies</string>
+    <string name="dummy_text">Dummy Text</string>
+    <string name="invalid_adapter">Result is invalid in Adapter</string>
+    <string name="the_api_key_is_invalid_or_no_data_is_passing_through">The API key is invalid or no data is passing through</string>
+    <string name="error_handling">API or input value is incorrect</string>
+    <string name="error_handling_details">invalid id or no content</string>
+    <string name="move_images">move images</string>
+    <string name="this_is_image">This is image</string>
+    <string name="move_detail">Movie Detail</string>
+</resources>

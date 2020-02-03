@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetails"
+    android:layout_margin="@dimen/move_detail_parent_layout_margin">
+
+    <LinearLayout
+        android:id="@+id/error_container_linear_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/error_text_view_new"
+            android:text="@string/the_api_key_is_invalid_or_no_data_is_passing_through"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_detail_poster"
+        android:layout_width="@dimen/detail_image_width"
+        android:layout_height="@dimen/detail_image_height"
+        android:contentDescription="@string/this_is_image"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/avatars[0]"
+        />
+
+    <TextView
+        android:id="@+id/id_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_detail_poster"
+        android:layout_marginTop="@dimen/detail_title_margin_top"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold"
+        android:text="@string/dummy_text" />
+
+    <RatingBar
+        android:id="@+id/id_detail_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:progressTint="@color/rating_bar_colour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@id/id_detail_title"
+        />
+
+    <TextView
+        android:id="@+id/id_detail_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/detail_overview_margin"
+        android:textSize="@dimen/default_text_size"
+        android:text="@string/dummy_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/id_detail_rating_bar"
+        android:layout_marginTop="@dimen/margin_top"
+        />
+
+</RelativeLayout>

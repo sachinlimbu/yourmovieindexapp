@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_bottom"
+    android:id="@+id/cardview_id"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent_layout"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_margin="@dimen/margin_right"
+        >
+
+        <ImageView
+            android:id="@+id/id_MovieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/move_images"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_title"
+            android:layout_toEndOf="@id/id_MovieImage"
+            android:padding="@dimen/detail_overview_margin"
+            android:textSize="@dimen/default_text_size"
+            android:layout_toRightOf="@id/id_MovieImage" />
+
+        <RatingBar
+            android:id="@+id/id_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_title"
+            android:layout_toRightOf="@id/id_MovieImage"
+            android:isIndicator="true"
+            android:progressTint="@color/rating_bar_colour"
+            android:scaleX=".9"
+            android:scaleY=".9" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_text_size">18sp</dimen>
+    <dimen name="card_box_padding">30dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="detail_image_width">250dp</dimen>
+    <dimen name="detail_image_height">250dp</dimen>
+    <dimen name="move_detail_parent_layout_margin">20dp</dimen>
+    <dimen name="detail_title_margin_top">50dp</dimen>
+    <dimen name="detail_overview_margin">25dp</dimen>
+</resources>
